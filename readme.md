@@ -1,0 +1,3 @@
+- 打开mybinder.org
+- 输入https://github.com/Restry/binder-notebook
+- 这样可以打开高级版 https://mybinder.org/v2/gh/Restry/binder-notebook/master?urlpath=lab/tree/demo.ipynb
