@@ -1,9 +1,24 @@
-# Mixing Python 2 and 3 kernels with `runtime.txt`
+# Python environment with requirements.txt
 
-[![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/binder-examples/python2_with_3/master)
+[![Binder](http://mybinder.org/badge.svg)](http://beta.mybinder.org/v2/gh/binder-examples/requirements/master)
 
-Sometimes you want *both* Python 2 and Python 3 (e.g., if you have a mixture of notebooks that use each
-version of the language). This repository demonstrates how to handle these cases with `repo2docker`. You can
-specify a Python 2.7 environment with the `runtime.txt` file. In this case, `repo2docker` will install Python 2
-*alongside* Python 3 (though all commands will default to Python 2). In this case, you can install Python 3 dependencies
-with `requirements3.txt`, while a file called `requirements.txt` alone will install to the Python 2 environment.
+A Binder-compatible repo with a `requirements.txt` file.
+
+Access this Binder at the following URL: 
+
+http://mybinder.org/v2/gh/binder-examples/requirements/master
+
+## Notes
+The `requirements.txt` file should list all Python libraries that your notebooks
+depend on, and they will be installed using:
+
+```
+pip install -r requirements.txt
+```
+
+The base Binder image contains no extra dependencies, so be as
+explicit as possible in defining the packages that you need. This includes
+specifying explict versions wherever possible.
+
+In this example we include the library `seaborn`, and our notebook uses it
+to plot a figure. 
