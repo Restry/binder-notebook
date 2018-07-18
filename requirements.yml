@@ -1,11 +1,6 @@
 dependencies:
   - python=2
   - pip:
-    - spacy
-    - ipykernel
-    - scipy
     - numpy
     - scikit-learn
     - matplotlib
-    - seaborn
-    - thinc
