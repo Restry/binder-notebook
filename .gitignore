@@ -2,3 +2,7 @@
 .conda
 .local
 .cache
+.bash_logout
+.bashrc
+.profile
+.wget-hsts
