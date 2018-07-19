@@ -2,3 +2,8 @@
 .conda
 .local
 .cache
+.bashrc
+.bash_logout
+.ipython
+.ipynb_checkpoints
+.wget-hsts
